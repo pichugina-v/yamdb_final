@@ -13,7 +13,7 @@
 ## Начало работы:
 
 * Клонируйте репозиторий `yamdb_final`
-```python
+```bash
 git clone https://github.com/pichugina-v/yamdb_final.git
 ```
 
@@ -28,28 +28,28 @@ DB_PORT=5432
 ```
 
 * Запустите docker-compose командой 
-```python
+```bash
 docker-compose up -d --build
 ```
 
 * Примените миграции
-```python
+```bash
 docker-compose exec web python manage.py makemigrations --noinput
 docker-compose exec web python manage.py migrate --noinput
 ```
 
 * Создайте пользователя с правами администратора
-```python
+```bash
 docker-compose exec web python manage.py createsuperuser
 ```
 
 * Соберите статику
-```python
+```bash
 docker-compose exec web python manage.py collectstatic --no-input
 ```
 
 * Загрузите начальные данные в базу данных
-```python
+```bash
 docker-compose exec web python manage.py loaddata fixtures.json
 ```
 
@@ -58,3 +58,5 @@ docker-compose exec web python manage.py loaddata fixtures.json
 Для входа в панель администратора необходимо перейти по адресу `http://127.0.0.1/admin/`
 
 Документация к проекту доступна по адресу `http://127.0.0.1/redoc/`
+
+Проект доступен по ссылке: `http://62.84.114.36/api/v1/`
