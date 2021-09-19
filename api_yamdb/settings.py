@@ -5,9 +5,10 @@ from datetime import timedelta
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = os.environ.get('SECRET_KEY')
+# SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = 'p&l%385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs'
 
-DEBUG = False
+DEBUG = os.environ.get('DEBUG', False)
 
 ALLOWED_HOSTS = ['*', 'localhost', '62.84.114.36']
 
