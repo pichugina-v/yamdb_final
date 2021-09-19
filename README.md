@@ -26,6 +26,7 @@ POSTGRES_PASSWORD=<пароль для подключения к базе дан
 DB_HOST=db
 DB_PORT=5432
 SECRET_KEY=<секретный ключ Django>
+DEBUG=True
 ```
 
 * Запустите docker-compose командой 
