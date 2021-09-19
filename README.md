@@ -61,4 +61,4 @@ docker-compose exec web python manage.py loaddata fixtures.json
 
 Документация к проекту доступна по адресу `http://127.0.0.1/redoc/`
 
-Проект доступен по ссылке: [`http://62.84.114.36/api/v1/`]
+Проект доступен по ссылке: [http://62.84.114.36/api/v1/]
